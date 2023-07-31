@@ -1,0 +1,26 @@
+{{>header}}
+<body>
+    {{>navbar}}
+
+    <div class="container rounded p-sm-5 mt-5 d-flex flex-row bg-set">
+        <div class="left-pane container-fluid d-flex flex-column">
+            <img src="img/rocket1.png" class="vert-move" alt="Rocket">
+            <a href="#" class="m-5 welcome-text" style="color: darkturquoise; font-size: 40px">Welcome to <br>SignMeUpNow!!</a><br>
+        </div>
+        <div class="right-pane container-fluid d-flex flex-column login">
+            <div>
+                <a href="/login"><button type="button" class="p-2" style="color: white;">Login</button></a>
+            </div>
+            <div>
+                <a href="/register"><button type="button" class="p-2" style="color: white;">Register</button></a>
+            </div>
+            
+        </div>
+
+    </div>
+
+
+    {{>footer}}
+    {{>scripts}}
+</body>
+</html>

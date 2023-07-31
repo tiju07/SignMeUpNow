@@ -1,0 +1,139 @@
+.navbar-brand {
+    color: white !important;
+}
+
+.nav-link{
+    color: white !important;
+}
+
+nav{
+    border-bottom: 2px solid white;
+}
+
+.bg-set{
+    background-image: url("/img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white !important;
+}
+
+.m-5{
+    transform: translateX(2rem) !important;
+}
+
+.container{
+    border-radius: 5rem !important;
+}
+
+img{
+    width: fit-content;
+    height: 20vh;
+}
+
+.left-pane{
+    align-items: center;
+    background-size: 0;
+}
+
+.right-pane{
+    width: 130vw;
+}
+
+.form-row{
+    margin: 3rem 0;
+    height: 2rem;
+}
+
+.colr{
+    background-color: black;
+    color: white;
+}
+
+button{
+    background-color: black;
+    color: white;
+    border-radius: 0.5rem;
+}
+
+body{
+    background-image: url("/img/bg.jpg");
+    font-family: 'Handjet', cursive !important;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+.radioStyle{
+    accent-color: black;
+}
+
+/* Animation */
+img.vert-move {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+img.vert-move {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(40px); }
+    100% { transform: translateY(-40px); }
+}
+@keyframes mover {
+    0% { transform: translateY(40px); }
+    100% { transform: translateY(-40px); }
+}
+
+.login{
+    width: 114%;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.login button{
+    margin-left: 7rem;
+}
+.card-columns{
+    width: 85%;
+}
+
+.card-style{
+    background-image: url('/img/card1.jpg');
+    color: black;
+    margin: 4rem;
+    border: none;
+}
+
+h1{
+    color: white;
+    font-size: 6rem;
+}
+
+h3{
+    color: white;
+    font-size: 4rem;
+}
+.card-title{
+    font-size: 1.7rem;
+    background-color: transparent;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.card-text{
+    color: black;
+    font-weight: bold;
+}
+
+/* Index Page Styling */
+.form-col{
+    margin-left: -1rem;
+    padding: 2rem;
+}
+
+/* Footer */
+
+footer{
+    height: 10vh;
+    padding: 2rem;
+}

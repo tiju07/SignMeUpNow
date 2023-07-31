@@ -1,0 +1,64 @@
+{{>header}}
+<body>
+    {{>navbar}}
+
+    <div class="container rounded p-sm-5 mt-5 d-flex flex-row bg-set">
+        <div class="left-pane container d-flex flex-column">
+            <img src="img/rocket1.png" class="vert-move" alt="Rocket">
+            <a href="/" class="m-5" style="color: darkturquoise; font-size: 40px; text-decoration: none;">Welcome to SignMeUpNow!!</a><br>
+             <a href="/login"><button type="button" class="p-2" style="color: white;">Login</button></a>
+        </div>
+        <div class="right-pane container-fluid d-flex flex-column">
+            <form action="/register" method="POST" id="registrationForm">
+                <div class="form-row">
+                    <div class="col-5 m-2">
+                        <input type="text" class="form-control colr" placeholder="First name" name="firstName" onkeydown="return /[a-z]/i.test(event.key)">
+                    </div>
+                    <div class="col-5 m-2">
+                        <input type="text" class="form-control colr" placeholder="Last name" name="lastName" onkeydown="return /[a-z]/i.test(event.key)">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-5 m-2">
+                        <input type="email" class="form-control colr" placeholder="Email" name="email">
+                    </div>
+                    <div class="form-check form-check-inline mx-3">
+                        <input class="form-check-input radioStyle" type="radio" value="Male" name="gender" required>
+                        <label class="form-check-label" for="inlineCheckbox1">Male</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input radioStyle" type="radio" value="Female" name="gender" required>
+                        <label class="form-check-label" for="inlineCheckbox1">Female</label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-5 m-2">
+                        <input type="text" class="form-control colr" placeholder="Contact No." name="contactNo" pattern="[0-9]{10}">
+                    </div>
+                    <div class="col-5 m-2">
+                        <input type="number" class="form-control colr" placeholder="Age" name="age">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-5 m-2">
+                        <input type="text" class="form-control colr" placeholder="Password" name="password" required>
+                    </div>
+                    <div class="col-5 m-2">
+                        <input type="text" class="form-control colr" placeholder="Confirm Password" name="confirmPassword" required>
+                    </div>
+                </div>
+                <div class="form-row justify-content-end">
+                    <div class="col-4 m-2 p-4">
+                        <button class="p-2 mx-4" style="color: white;" type="submit">Register</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+
+    {{>footer}}
+    {{>scripts}}
+</body>
+</html>
